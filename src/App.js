@@ -1,8 +1,7 @@
 import React from "react";
-import Header from "./Header";
-import Main from "./Main";
-import Grid from "@material-ui/core/Grid";
+
 import { withStyles } from "@material-ui/core/styles";
+import MFAdd from "./MFAdd";
 
 const styles = theme => ({
   root: {
@@ -17,10 +16,7 @@ const styles = theme => ({
 
 const App = props => (
   <div className={props.root}>
-    <Grid container spacing={24} justify={"center"}>
-      <Header />
-      <Main />
-    </Grid>
+    <MFAdd />
   </div>
 );
 
